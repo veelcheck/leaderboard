@@ -1,6 +1,6 @@
 ﻿# [iCodeThis inspired](https://icodethis.com/)  
 
-I recreated their design to the best of my ability and added some JavaScript.  
+I recreated their design to the best of my ability and added some JavaScript. See [demo version here](https://veelcheck.github.io/leaderboard/).   
 
 What JavaScript does:
 * It generates the content of the table.
