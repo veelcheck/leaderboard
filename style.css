@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background-image: url("https://www.freewalldownload.com/lake-wallpaper/lake-attractive-rivers-wallpaper-free-download.jpg");
+  -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   background-size: cover;
   background-repeat: no-repeat;
