@@ -1,0 +1,275 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://www.freewalldownload.com/lake-wallpaper/lake-attractive-rivers-wallpaper-free-download.jpg");
+  backdrop-filter: blur(50px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin-inline: auto;
+  margin-top: 5rem;
+  padding-top: .05rem;
+  background-color: rgb(255, 255, 255, .15);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 13% repeat(3, 1fr);
+}
+
+p {
+  margin: 0;
+  padding-block: 1rem;
+}
+
+ img {
+  display: inline-block;
+ }
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-inline: 1rem;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-left:hover {
+  padding-left: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: orangered;
+  margin: .25rem;
+}
+
+.primary-nav {
+  padding-block: 2em;
+  padding-inline: 3em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondary-nav {
+  padding-bottom: 1em;
+  padding-inline: 3em;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.border-left::before {
+  border-left: 1px solid white;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+a:hover {
+  background-color: rgba(245, 250, 249, 0.5);
+  border-radius: 10px;
+  margin-inline: 1rem;
+}
+
+.table {
+  margin-inline: .25rem;
+}
+
+.table__head {
+  background-color: rgb(93, 216, 196);
+  color: white;
+  padding-inline: 3rem;
+  text-align: center;
+}
+
+.table__header {
+  padding-block: 1rem;
+}
+
+.table__header_border {
+ padding-block: 1rem;
+ position: relative;
+}
+
+.position-left {
+  text-align: left;
+}
+
+.table__header_border::after  {
+  content: '';
+  position: absolute;
+  border-right: 1px solid white;
+  bottom: 0;
+  right: -1px;
+  height: 50%;
+  padding-inline: 2rem;
+}
+
+.table__line {
+  background: rgba(226, 236, 226, 0.3);
+  color: white;
+  padding-inline: 3rem;
+  text-transform: uppercase;
+  border-top: 1px solid white;
+  position: relative;
+}
+
+.list-number {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 25%;
+  left: 1.5%;
+}
+
+p + p {
+  border-left: 1px solid white;
+}
+
+.js-container .grid:nth-child(even){
+  background: rgba(226, 236, 226, 0.7);
+}
+
+.text {
+  font-size: 1.3rem;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.vote-btn {
+  padding-inline: 1em;
+  border-radius: 1em;
+  margin-block: 1em;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.voted {
+  padding-inline: 1em;
+  border-radius: 1em;
+  margin-block: 1em;
+  border: none;
+  background-color: rgb(4, 54, 13);
+  color: white;
+}
+
+.no-cursor {
+  cursor: unset;
+}
+
+.small {
+  font-size: .7rem;
+  text-transform: lowercase;
+}
+
+.col {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  color: white;
+  max-width: 990px;
+  margin-inline: auto;
+  text-align: right;
+  margin-top: .25rem;
+  padding-top: .25rem;
+  border-top: 10px solid orangered;
+}
+
+@media screen and (max-width: 870px) {
+  .primary-nav,
+  .secondary-nav,
+  .table__head,
+  .table__line {
+    padding-inline: 1em;
+  }
+
+  .position-left {
+    text-align: center;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  img {
+    display: none;
+  }
+  
+
+  .list-number {
+    position: relative;
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: .8rem;
+    padding-inline: .8rem; 
+  }
+
+  .small {
+    font-size: .4rem;
+  }
+
+  .footer {
+    padding-right: 2px;
+  }
+}
+
+@media screen and (max-width: 454px) {
+  .primary-nav {
+    justify-content: flex-start;
+    padding-inline: .2rem;
+  }
+ 
+ .nav-item {
+  font-size: .75rem;
+ 
+ }
+
+ .no-padding-left-small-size {
+  padding-left: 0;
+ }
+
+ li[class^="table__header"] {
+  font-size: .75rem;
+ }
+
+}
+ 
